@@ -1,72 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Animal Rescue</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Health Care | Saving Lives</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <h2>🐾 Animal Rescue</h2>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">🐾 Animal Health Care</div>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#volunteer">Volunteer</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Home -->
-    <section id="home">
-        <h1>Welcome to Animal Rescue</h1>
-        <p>Help injured animals and save lives ❤️</p>
+    <section id="home" class="animate_animated animate_fadeIn">
+        <div class="hero-content">
+            <h1>Caring for Every Life</h1>
+            <p>Providing the best medical care and shelter for animals in need.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
     </section>
 
-    <!-- About -->
     <section id="about">
-        <h1>About Animals</h1>
-        <img src="assets/animal.jpg" width="200">
-        <p>Animals are an important part of our ecosystem. Many animals need help when injured or abandoned.</p>
+        <h2 class="animate_animated animate_fadeInUp">About Our Mission</h2>
+        <p>We are dedicated to rescuing injured and abandoned animals. Our mission is to provide them with a safe environment, medical treatment, and a chance to find a loving forever home.</p>
     </section>
 
-    <!-- Service -->
-    <section id="service">
-        <h1>Our Services</h1>
-        <p>✔️ 100+ Animals Rescued</p>
-        <p>✔️ 50+ Volunteers</p>
-        <p>✔️ Connected with NGOs</p>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>🚑 Emergency Rescue</h3>
+                <p>24/7 emergency response for animals in critical condition.</p>
+            </div>
+            <div class="service-card">
+                <h3>💉 Vaccination</h3>
+                <p>Regular immunization drives to prevent deadly diseases.</p>
+            </div>
+            <div class="service-card">
+                <h3>🏥 Veterinary Care</h3>
+                <p>Professional health checkups by experienced doctors.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Volunteer -->
     <section id="volunteer">
-        <h1>Become a Volunteer</h1>
-        <p>You can help animals by picking them up and safely delivering them to NGOs.</p>
+        <h2>Become a Volunteer</h2>
+        <p>Your small contribution can make a big difference. Join our community to help voiceless souls.</p>
+        <button class="special-btn" onclick="alert('Thank you for showing interest! We will contact you soon.')">Register Now</button>
     </section>
 
-    <!-- Contact (Form) -->
     <section id="contact">
-        <h1>Register & Request</h1>
-
-        <form id="form">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <input type="text" id="mobile" placeholder="Mobile Number" required>
-            <input type="email" id="email" placeholder="Email ID" required>
-
-            <input type="text" id="location" placeholder="Location">
-            <button type="button" onclick="getLocation()">Get Location</button>
-
-            <button type="submit">Submit</button>
+        <h2>Contact Us</h2>
+        <p>Have questions? Send us a message and we will get back to you.</p>
+        <form action="connect.php" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
+            <button type="submit">Submit Details</button>
         </form>
-
-        <p id="msg"></p>
     </section>
 
     <script src="main.js"></script>
 </body>
-
 </html>
