@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal Rescue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>🐾 Animal Rescue</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h1>Welcome to Animal Rescue</h1>
+        <p>Help injured animals and save lives ❤️</p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h1>About Animals</h1>
+        <img src="assets/animal.jpg" width="200">
+        <p>Animals are an important part of our ecosystem. Many animals need help when injured or abandoned.</p>
+    </section>
+
+    <!-- Service -->
+    <section id="service">
+        <h1>Our Services</h1>
+        <p>✔️ 100+ Animals Rescued</p>
+        <p>✔️ 50+ Volunteers</p>
+        <p>✔️ Connected with NGOs</p>
+    </section>
+
+    <!-- Volunteer -->
+    <section id="volunteer">
+        <h1>Become a Volunteer</h1>
+        <p>You can help animals by picking them up and safely delivering them to NGOs.</p>
+    </section>
+
+    <!-- Contact (Form) -->
+    <section id="contact">
+        <h1>Register & Request</h1>
+
+        <form id="form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="text" id="mobile" placeholder="Mobile Number" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+
+            <input type="text" id="location" placeholder="Location">
+            <button type="button" onclick="getLocation()">Get Location</button>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="msg"></p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
